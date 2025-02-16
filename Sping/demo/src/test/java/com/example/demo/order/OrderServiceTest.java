@@ -1,10 +1,8 @@
 package com.example.demo.order;
 
 import com.example.demo.AppConfig;
-import com.example.demo.member.Grade;
-import com.example.demo.member.Member;
-import com.example.demo.member.MemberService;
-import com.example.demo.member.MemberServiceImpl;
+import com.example.demo.discount.FixDiscountPolicy;
+import com.example.demo.member.*;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -32,4 +30,5 @@ public class OrderServiceTest {
 
         Assertions.assertThat(order.getDiscountPrice()).isEqualTo(1000);
     }
+
 }
